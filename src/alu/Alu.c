@@ -1,7 +1,4 @@
 #include "Alu.h"
-#include <stdio.h>
-
-byte asw = {0};
 
 /*
  * 16-bit addition
@@ -48,6 +45,7 @@ _wordsub(word a, word b)
 			(bi & bor<<i)) >> i;
 
 	}
+	//TODO: Set flags
 	return d;
 }
 
